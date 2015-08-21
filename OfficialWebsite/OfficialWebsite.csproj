@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A36BE6B-D7EF-4B82-8444-3ED03441C69D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OfficialWebsite</RootNamespace>
+    <AssemblyName>OfficialWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConsoleView\About.aspx" />
+    <Content Include="ConsoleView\Addcooperation.aspx" />
+    <Content Include="ConsoleView\AddRecruitment.aspx" />
+    <Content Include="ConsoleView\ConsoleLogin.aspx" />
+    <Content Include="ConsoleView\CooperationList.aspx" />
+    <Content Include="ConsoleView\Home.aspx" />
+    <Content Include="ConsoleView\HomeContent.aspx" />
+    <Content Include="ConsoleView\Joinus.aspx" />
+    <Content Include="ConsoleView\LOGO.aspx" />
+    <Content Include="ConsoleView\Recruitment.aspx" />
+    <Content Include="ConsoleView\Team.aspx" />
+    <Content Include="ConsoleView\test.aspx" />
+    <Content Include="ConsoleView\testajax.aspx" />
+    <Content Include="ConsoleView\UpHomeContent.aspx" />
+    <Content Include="ConsoleView\UPTeam.aspx" />
+    <Content Include="ConsoleView\WebForm1.aspx" />
+    <Content Include="ConsoleView\WebForm2.aspx" />
+    <Content Include="Content\avatars\avatar.png" />
+    <Content Include="Content\avatars\avatar1.png" />
+    <Content Include="Content\avatars\avatar2.png" />
+    <Content Include="Content\avatars\avatar3.png" />
+    <Content Include="Content\avatars\avatar4.png" />
+    <Content Include="Content\avatars\avatar5.png" />
+    <Content Include="Content\avatars\ljj.jpg" />
+    <Content Include="Content\avatars\profile-pic.jpg" />
+    <Content Include="Content\avatars\user.jpg" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\js\npm.js" />
+    <Content Include="Content\css\ace-ie.min.css" />
+    <Content Include="Content\css\ace-rtl.min.css" />
+    <Content Include="Content\css\ace-skins.min.css" />
+    <Content Include="Content\css\ace.min.css" />
+    <Content Include="Content\css\bootstrap-editable.css" />
+    <Content Include="Content\css\bootstrap-timepicker.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\chosen.css" />
+    <Content Include="Content\css\colorbox.css" />
+    <Content Include="Content\css\colorpicker.css" />
+    <Content Include="Content\css\datepicker.css" />
+    <Content Include="Content\css\daterangepicker.css" />
+    <Content Include="Content\css\dropzone.css" />
+    <Content Include="Content\css\font-awesome-ie7.css" />
+    <Content Include="Content\css\font-awesome-ie7.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\fonts-googleapis.css" />
+    <Content Include="Content\css\fullcalendar.css" />
+    <Content Include="Content\css\images\loading.gif" />
+    <Content Include="Content\css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Content\css\jquery-ui-1.10.3.full.min.css" />
+    <Content Include="Content\css\jquery.gritter.css" />
+    <Content Include="Content\css\select2.css" />
+    <Content Include="Content\css\ui.jqgrid.css" />
+    <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\images\gallery\image-1.jpg" />
+    <Content Include="Content\images\gallery\image-2.jpg" />
+    <Content Include="Content\images\gallery\image-3.jpg" />
+    <Content Include="Content\images\gallery\image-4.jpg" />
+    <Content Include="Content\images\gallery\image-5.jpg" />
+    <Content Include="Content\images\gallery\image-6.jpg" />
+    <Content Include="Content\images\gallery\thumb-1.jpg" />
+    <Content Include="Content\images\gallery\thumb-2.jpg" />
+    <Content Include="Content\images\gallery\thumb-3.jpg" />
+    <Content Include="Content\images\gallery\thumb-4.jpg" />
+    <Content Include="Content\images\gallery\thumb-5.jpg" />
+    <Content Include="Content\images\gallery\thumb-6.jpg" />
+    <Content Include="Content\OW.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\android-code.png" />
+    <Content Include="Images\android.png" />
+    <Content Include="Images\applogo.png" />
+    <Content Include="Images\applogo_32x32.ico" />
+    <Content Include="Images\banner.png" />
+    <Content Include="Images\banner2-.png" />
+    <Content Include="Images\bannerone.jpg" />
+    <Content Include="Images\bannertwo.png" />
+    <Content Include="Images\bliphone.png" />
+    <Content Include="Images\carousel\banner.png" />
+    <Content Include="Images\carousel\bannerone.jpg" />
+    <Content Include="Images\carousel\bannertwo.png" />
+    <Content Include="Images\code.png" />
+    <Content Include="Images\Code\androidcode.jpg" />
+    <Content Include="Images\Code\ioscode.jpg" />
+    <Content Include="Images\Code\ljj.jpg" />
+    <Content Include="Images\Code\weibocode.jpg" />
+    <Content Include="Images\Code\weixincode.jpg" />
+    <Content Include="Images\coffice.png" />
+    <Content Include="Images\cooperation\ljj.jpg" />
+    <Content Include="Images\doctor.png" />
+    <Content Include="Images\grandroid.png" />
+    <Content Include="Images\health.png" />
+    <Content Include="Images\Home\201508180145119608.png" />
+    <Content Include="Images\Home\201508180206543853.png" />
+    <Content Include="Images\Home\201508180207052339.png" />
+    <Content Include="Images\Home\201508180214223669.png" />
+    <Content Include="Images\Home\201508180216288871.png" />
+    <Content Include="Images\Home\201508180902020389.png" />
+    <Content Include="Images\Home\201508180903167662.png" />
+    <Content Include="Images\Home\201508180904149716.png" />
+    <Content Include="Images\Home\201508180909196147.png" />
+    <Content Include="Images\Home\201508180909598503.png" />
+    <Content Include="Images\Home\201508180910518347.png" />
+    <Content Include="Images\Home\201508180911520486.png" />
+    <Content Include="Images\Home\201508180914537300.png" />
+    <Content Include="Images\Home\201508180915048972.png" />
+    <Content Include="Images\Home\201508180915126027.png" />
+    <Content Include="Images\Home\201508180915214807.png" />
+    <Content Include="Images\Home\201508180915291858.png" />
+    <Content Include="Images\Home\201508181541320238.jpg" />
+    <Content Include="Images\Home\201508181541507596.png" />
+    <Content Include="Images\illness.png" />
+    <Content Include="Images\information.png" />
+    <Content Include="Images\iphone-code.png" />
+    <Content Include="Images\iphone.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\medicine chest.png" />
+    <Content Include="Images\money.png" />
+    <Content Include="Images\round rectangle.png" />
+    <Content Include="Images\struggle.png" />
+    <Content Include="Images\Team201508061533358089.jpg" />
+    <Content Include="Images\Team\201508061632173513.jpg" />
+    <Content Include="Images\Team\201508061632404766.jpg" />
+    <Content Include="Images\Team\201508061633310695.jpg" />
+    <Content Include="Images\Team\201508061634025243.jpg" />
+    <Content Include="Images\Team\201508061654225591.jpg" />
+    <Content Include="Images\Team\201508061657111678.jpg" />
+    <Content Include="Images\Team\201508061704148940.jpg" />
+    <Content Include="Images\Team\QQ图片20150803194524.jpg" />
+    <Content Include="Images\WallImages\imagepath\Site.css" />
+    <Content Include="Images\健康.png" />
+    <Content Include="Images\养生.png" />
+    <Content Include="Images\图层-2.png" />
+    <Content Include="Images\图层-3.png" />
+    <Content Include="Images\家庭医生新媒体-拷贝.png" />
+    <Content Include="Images\家庭药箱.png" />
+    <Content Include="Images\找好医生.png" />
+    <Content Include="Images\疾病.png" />
+    <Content Include="index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\1.10.2\jquery.min.js" />
+    <Content Include="Scripts\2.0.3\jquery.min.js" />
+    <Content Include="Scripts\ace-elements.min.js" />
+    <Content Include="Scripts\ace-extra.min.js" />
+    <Content Include="Scripts\ace.min.js" />
+    <Content Include="Scripts\additional-methods.min.js" />
+    <Content Include="Scripts\ajaxfileupload.js" />
+    <Content Include="Scripts\bootbox.min.js" />
+    <Content Include="Scripts\bootstrap-colorpicker.min.js" />
+    <Content Include="Scripts\bootstrap-tag.min.js" />
+    <Content Include="Scripts\bootstrap-wysiwyg.min.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\chosen.jquery.min.js" />
+    <Content Include="Scripts\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="Scripts\date-time\daterangepicker.min.js" />
+    <Content Include="Scripts\date-time\moment.min.js" />
+    <Content Include="Scripts\dropzone.min.js" />
+    <Content Include="Scripts\excanvas.min.js" />
+    <Content Include="Scripts\flot\jquery.flot.min.js" />
+    <Content Include="Scripts\flot\jquery.flot.pie.min.js" />
+    <Content Include="Scripts\flot\jquery.flot.resize.min.js" />
+    <Content Include="Scripts\fuelux\data\fuelux.tree-sampledata.js" />
+    <Content Include="Scripts\fuelux\fuelux.spinner.min.js" />
+    <Content Include="Scripts\fuelux\fuelux.tree.min.js" />
+    <Content Include="Scripts\fuelux\fuelux.wizard.min.js" />
+    <Content Include="Scripts\fullcalendar.min.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.full.min.js" />
+    <Content Include="Scripts\jquery.autosize.min.js" />
+    <Content Include="Scripts\jquery.colorbox-min.js" />
+    <Content Include="Scripts\jquery.dataTables.bootstrap.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.easy-pie-chart.min.js" />
+    <Content Include="Scripts\jquery.gritter.min.js" />
+    <Content Include="Scripts\jquery.hotkeys.min.js" />
+    <Content Include="Scripts\jquery.inputlimiter.1.3.1.min.js" />
+    <Content Include="Scripts\jquery.knob.min.js" />
+    <Content Include="Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\jquery.mobile.custom.min.js" />
+    <Content Include="Scripts\jquery.nestable.min.js" />
+    <Content Include="Scripts\jquery.slimscroll.min.js" />
+    <Content Include="Scripts\jquery.sparkline.min.js" />
+    <Content Include="Scripts\jquery.ui.touch-punch.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\markdown\bootstrap-markdown.min.js" />
+    <Content Include="Scripts\markdown\markdown.min.js" />
+    <Content Include="Scripts\ow_JavaScript.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\stat.js" />
+    <Content Include="Scripts\typeahead-bs2.min.js" />
+    <Content Include="Scripts\x-editable\ace-editable.min.js" />
+    <Content Include="Scripts\x-editable\bootstrap-editable.min.js" />
+    <Content Include="View\About.aspx" />
+    <Content Include="View\cooperation.aspx" />
+    <Content Include="View\demo.aspx" />
+    <Content Include="View\Home.aspx" />
+    <Content Include="View\Job.aspx" />
+    <Content Include="View\jobinfo.aspx" />
+    <Content Include="View\Team.aspx" />
+    <Content Include="View\WebForm1.aspx" />
+    <Content Include="View\WebForm2.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsoleView\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\Addcooperation.aspx.cs">
+      <DependentUpon>Addcooperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\Addcooperation.aspx.designer.cs">
+      <DependentUpon>Addcooperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\AddRecruitment.aspx.cs">
+      <DependentUpon>AddRecruitment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\AddRecruitment.aspx.designer.cs">
+      <DependentUpon>AddRecruitment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\delTeamHandler.ashx.cs">
+      <DependentUpon>delTeamHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\GetAboutHandler.ashx.cs">
+      <DependentUpon>GetAboutHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\GetTeamInfo.ashx.cs">
+      <DependentUpon>GetTeamInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\HomeContentHandler.ashx.cs">
+      <DependentUpon>HomeContentHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\JoinusHandler.ashx.cs">
+      <DependentUpon>JoinusHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\LoginHandler.ashx.cs">
+      <DependentUpon>LoginHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\ow_cooperationHandler.ashx.cs">
+      <DependentUpon>ow_cooperationHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\ow_jobHandler.ashx.cs">
+      <DependentUpon>ow_jobHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UpAboutHandler.ashx.cs">
+      <DependentUpon>UpAboutHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UpdateHomeContentHandler.ashx.cs">
+      <DependentUpon>UpdateHomeContentHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UpImgCodeHandler.ashx.cs">
+      <DependentUpon>UpImgCodeHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UploadICONHandler.ashx.cs">
+      <DependentUpon>UploadICONHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UploadPicturesHandler.ashx.cs">
+      <DependentUpon>UploadPicturesHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UpLogoHandler.ashx.cs">
+      <DependentUpon>UpLogoHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ashx\UpTeamInfoHandler.ashx.cs">
+      <DependentUpon>UpTeamInfoHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\ConsoleLogin.aspx.cs">
+      <DependentUpon>ConsoleLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\ConsoleLogin.aspx.designer.cs">
+      <DependentUpon>ConsoleLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\CooperationList.aspx.cs">
+      <DependentUpon>CooperationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\CooperationList.aspx.designer.cs">
+      <DependentUpon>CooperationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\HomeContent.aspx.cs">
+      <DependentUpon>HomeContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\HomeContent.aspx.designer.cs">
+      <DependentUpon>HomeContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\Joinus.aspx.cs">
+      <DependentUpon>Joinus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\Joinus.aspx.designer.cs">
+      <DependentUpon>Joinus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\LOGO.aspx.cs">
+      <DependentUpon>LOGO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\LOGO.aspx.designer.cs">
+      <DependentUpon>LOGO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\Recruitment.aspx.cs">
+      <DependentUpon>Recruitment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\Recruitment.aspx.designer.cs">
+      <DependentUpon>Recruitment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\test.ashx.cs">
+      <DependentUpon>test.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\testajax.aspx.cs">
+      <DependentUpon>testajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\testajax.aspx.designer.cs">
+      <DependentUpon>testajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\UpHomeContent.aspx.cs">
+      <DependentUpon>UpHomeContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\UpHomeContent.aspx.designer.cs">
+      <DependentUpon>UpHomeContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\UPTeam.aspx.cs">
+      <DependentUpon>UPTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\UPTeam.aspx.designer.cs">
+      <DependentUpon>UPTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleView\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsoleView\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\cooperation.aspx.cs">
+      <DependentUpon>cooperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\cooperation.aspx.designer.cs">
+      <DependentUpon>cooperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Job.aspx.cs">
+      <DependentUpon>Job.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Job.aspx.designer.cs">
+      <DependentUpon>Job.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\jobinfo.aspx.cs">
+      <DependentUpon>jobinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\jobinfo.aspx.designer.cs">
+      <DependentUpon>jobinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConsoleView\Site1.Master" />
+    <Content Include="Content\font\fontawesome-webfont.woff" />
+    <Content Include="ConsoleView\test.ashx" />
+    <Content Include="ConsoleView\ashx\LoginHandler.ashx" />
+    <Content Include="ConsoleView\ashx\GetAboutHandler.ashx" />
+    <Content Include="ConsoleView\ashx\UpAboutHandler.ashx" />
+    <Content Include="ConsoleView\ashx\GetTeamInfo.ashx" />
+    <Content Include="ConsoleView\ashx\UpTeamInfoHandler.ashx" />
+    <Content Include="ConsoleView\ashx\UploadPicturesHandler.ashx" />
+    <Content Include="ConsoleView\ashx\delTeamHandler.ashx" />
+    <Content Include="ConsoleView\ashx\JoinusHandler.ashx" />
+    <Content Include="ConsoleView\ashx\ow_jobHandler.ashx" />
+    <Content Include="ConsoleView\ashx\ow_cooperationHandler.ashx" />
+    <Content Include="ConsoleView\ashx\UploadICONHandler.ashx" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\font\fontawesome-webfont.eot" />
+    <Content Include="Content\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\font\FontAwesome.otf" />
+    <Content Include="View\Site1.Master" />
+    <Content Include="ConsoleView\ashx\UpImgCodeHandler.ashx" />
+    <Content Include="ConsoleView\ashx\HomeContentHandler.ashx" />
+    <Content Include="ConsoleView\ashx\UpdateHomeContentHandler.ashx" />
+    <Content Include="ConsoleView\ashx\UpLogoHandler.ashx" />
+    <None Include="Properties\PublishProfiles\ow.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\LOGOimg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBaseControl\DataBaseControl.csproj">
+      <Project>{34a5f01b-6594-4546-acd2-f7b6147f6483}</Project>
+      <Name>DataBaseControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2498</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2498/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

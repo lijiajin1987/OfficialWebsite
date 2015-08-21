@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OfficialWebsite.View.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" runat="server" id="owdescription"  content="" />
+    <%--家庭医生在线APP，由影响了几代人的知名健康传媒品牌“家庭医生”出品，是一个在内容、功能、服务、体验及研发技术等方面超越市面上的其他健康APP，能够“一站式”提供从一线临床医生在线解答，到疾病自查、家庭药箱、提醒/分享、养生/资讯，再到全国落地的健康体检/就医绿色通道等健康管理服务的、中国领先的O2O平台--%>
+    <meta name="author" content="家庭医生在线" />
+    <meta name="keywords" runat="server" id="owkeywords" content="" />
+    <%--家庭医生在线，家庭医生，健康，医疗，移动医疗，移动健康--%>
+    <link rel="icon" href="../Images/applogo_32x32.ico" />
+    <title>家庭医生在线-做千家万户的家庭医生</title>
+    <!-- basic styles -->
+    <link href="../Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/css/font-awesome.min.css" rel="stylesheet" />
+    <!--[if IE 7]>
+        <link href="../Content/css/font-awesome-ie7.min.css" rel="stylesheet"/>
+    <![endif]-->
+    <!-- page specific plugin styles -->
+    <link href="../Content/OW.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- fonts -->
+
+    <link rel="stylesheet" href="../Content/css/fonts-googleapis.css" />
+    <!-- inline styles related to this page -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+		<script src="../Scripts/html5shiv.js"></script>
+		<script src="../Scripts/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <div class="container ow_Navigation">
+                <div class="col-md-2 ow_logo">
+                    <a href="Home.aspx">
+                        <img id="LOGOimg" runat="server" class="img-responsive" src="../Images/applogo.png" />
+                    </a>
+                </div>
+                <div class="col-md-4 CompanyName">
+                    <a href="Home.aspx"><p runat="server" id="OWTitle">家庭医生在线APP</p></a>
+                </div>
+                <div class="col-md-6 ow_navbar">
+                    <ul class="" style="">
+                        <li><a href="Home.aspx">首页</a></li>
+                        <li><a id="gs" href="#" data-seletor="true" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content='<div class="col-xs-6 gszi text-center"><a href="About.aspx">关于我们</a></div><div class="col-xs-6 gszi text-center"><a href="Team.aspx">管理团队</a></div>'>公司</a></li>
+                        <li><a href="Job.aspx">加入我们</a></li>
+                        <li><a href="cooperation.aspx">合作</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="border-bottom:1px solid #e5e5e5;"></div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="row" style="margin-top: 30px; background-color: #8bc34a; padding: 20px 20px;">
+                <div class="container">
+                    <div class="col-md-5">
+                        <address class="text-left" style="margin-top: 25px;">
+                            <strong>联系我们</strong><br />
+                            &nbsp;&nbsp;<span>公司地址：广州市越秀区先烈中路80号汇华商贸大厦618室</span><br />
+                            &nbsp;&nbsp;<span>公司名称：广州家庭医生在线移动新媒体科技有限公司</span><br />
+                            &nbsp;&nbsp;<span><addr title="phone">联系电话：</addr>020-37619643</span><br />
+                            &nbsp;&nbsp;<span>备案号：粤ICP备15069044号-1</span>
+                        </address>
+                    </div>
+                    <div class="col-md-1">
+                        <div style="border-right: 1px dashed #000000; height: 150px; width: 1px; float: right;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-6" style="padding-top: 30px; padding-left: 75px;">
+                            <div class="col-xs-12">
+                                <img src="../Images/Code/weixincode.jpg" style="height: 105px; width: 105px;" /></div>
+                            <div class="col-xs-8" style="font-size: 12px;">
+                                <p class="text-center">
+                                    <img src="../Images/图层-3.png" style="width: 26px; height: 26px;" />
+                                    微信</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="padding-top: 30px; padding-left: 75px;">
+                            <div class="col-xs-12">
+                                <img src="../Images/Code/weibocode.jpg" style="height: 105px; width: 105px;" /></div>
+                            <div class="col-xs-9" style="font-size: 12px;">
+                                <p class="text-center">
+                                    <img src="../Images/图层-2.png" style="width: 26px; height: 26px;" />
+                                    新浪微博</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%--<div class="row hidden">
+                <a
+                    data-container="body" data-toggle="popover" data-placement="top"
+                    data-content='<p>可以显示？？</p>'>顶部的 Popover
+                </a>
+            </div>--%>
+        </div>
+    </form>
+    <!-- basic scripts -->
+
+    <!--[if !IE]> -->
+
+    <script src="../Scripts/2.0.3/jquery.min.js"></script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script src="../Scripts/1.10.2/jquery.min.js"></script>
+    <![endif]-->
+
+    <!--[if !IE]> -->
+
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='../Scripts/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='../Scripts/jquery-1.10.2.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='../Scripts/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="../Content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Scripts/typeahead-bs2.min.js"></script>
+
+    <!-- page specific plugin scripts -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderJavascript" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $("[data-toggle='popover']").popover({ html: true });
+                $("[data-toggle='popover']").mouseover(function () {
+                    $("[data-toggle='popover']").popover("show");
+                    //$(".popover").mouseover(function () {
+                    //    alert("我成功的在上面了");
+                    //});
+                    $(".popover").mouseleave(function () {
+                        $("[data-toggle='popover']").popover("hide");
+                    });
+                });
+
+            });
+        });
+    </script>
+</body>
+</html>
